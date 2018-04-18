@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+    // id 'net.ltgt.apt' version '0.15'
+}
+
+sourceCompatibility = '1.10'
+targetCompatibility = '1.10'
+
+repositories{
+    jcenter()
+}
+dependencies {
+    def lombokVersion = "1.16.20"
+    compileOnly "org.projectlombok:lombok:$lombokVersion"
+    //apt "org.projectlombok:lombok:$lombokVersion"
+}
